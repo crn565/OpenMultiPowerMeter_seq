@@ -3,9 +3,9 @@
 Muestras secuenciales de 5 electrodomesticos más el agregado usando el OMPM  (equipo de medida propio  basados en un bus RS485 con modulos PZEM004) el dia 13 de Mayo de 2023
 entre  las 17:22 y las 23:43 completando  en total 6h 21 minutos de muestras.
 
-No hay pausa entre secuencias y el tiempo de encendido de cada secuencia es seudoaleatorio entre 1  y 2 minutos. Esto difiere de un experimento anterior en el que la secuencia tambien fue ascentdente pero el encendido y apagado de los electrodomesticos se hizo manualmente
+No hay pausa entre secuencias y el tiempo de encendido de cada secuencia es seudoaleatorio entre 1  y 2 minutos. Esto difiere de un experimento anterior en el que la secuencia tambien fue ascendente pero el encendido y apagado de los electrodomesticos se hizo manualmente.
 
-El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/20, es decir : 
+El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/20, es decir: 
 
 - Entrenamiento :de 17:22 a 21:08
 
@@ -15,7 +15,7 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 # Resultados Metricas  con algoritmo CO, metodo Median  y 10"
 
-## Datos anteriores con secuencia fija y tiempo de encenido fijo de 2 minutos
+## Datos anteriores con secuencia fija y tiempo de encendido fijo de 2 minutos
 
 | Metrica          | Fryer   | LED Lamp | Incandescent lamp | Laptop Computer | Fan     | Media Aritmética |
 |-----------------|---------|----------|------------------|----------------|---------|------------------|
@@ -48,7 +48,7 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 ## INTERPRETACION DE LOS RESULTADOS
 
-El mejor resultado es el que tiene la puntuación F1 más alta, que son los datos secuenciales con secuencia fija. La puntuación F1 es una medida de exactitud que tiene en cuenta tanto la precisión como la recuperación. La precisión es la fracción de casos positivos predichos que son realmente positivos, y la recuperación es la fracción de casos positivos reales que son positivos predichos. Cuanto mayor sea la puntuación F1, más precisa será la predicción.
+El mejor resultado es el que tiene la puntuación F1 más alta, que son los datos secuenciales con secuencia fija y tiempo de encendido fijo. La puntuación F1 es una medida de exactitud que tiene en cuenta tanto la precisión como la recuperación. La precisión es la fracción de casos positivos predichos que son realmente positivos, y la recuperación es la fracción de casos positivos reales que son positivos predichos. Cuanto mayor sea la puntuación F1, más precisa será la predicción.
 
 Los otros dos resultados no son tan buenos porque tienen puntuaciones F1 más bajas. Los datos con muestras aleatorias tienen una puntuación F1 de 0,591, y los datos de secuencias con muestras aleatorias tienen una puntuación F1 de 0,638. Estos resultados no son tan buenos como los de los datos de secuencia con secuencia fija porque son menos precisos.
 
