@@ -26,7 +26,7 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 
 
-## Datos actuales con muestras aleatorias 
+## Datos con muestras aleatorias 
 
 | Metrica          | Fryer   | LED Lamp | Incandescent lamp | Laptop Computer | Fan     | Media Aritmética |
 |-----------------|---------|----------|------------------|----------------|---------|------------------|
@@ -37,7 +37,14 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 
 
-##
+## Datos  en secuencia
+
+| Metrica          | Fryer   | LED Lamp | Incandescent lamp | Laptop Computer | Fan     | Media Aritmética |
+|-----------------|---------|----------|------------------|----------------|---------|------------------|
+|F1|	0.638	|0.364|	0.858|	0.381|	0.682	|0.5846|
+|EAE|	0.000|	0.000	|0.000|	0.000|	0.000|	0.0000|
+|MNEAP|	0.678	|1.391|	0.342|	1.343|	0.761|	0.9030|
+|RMSE	|11.315|	9.334	|15.782|	8.833|	15.806|	12.2146|
 
 
 
