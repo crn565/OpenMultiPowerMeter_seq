@@ -1,5 +1,5 @@
 # OpenMultiPowerMeter_seq
-# openMultiPowerMeter_random
+
 Muestras secuenciales de 5 electrodomesticos más el agregado usando el OMPM  (equipo de medida propio  basados en un bus RS485 con modulos PZEM004) el dia 13 de Mayo de 2023
 entre  las 17:22 y las 23:43 completando  en total 6h 21 minutos de muestras.
 
@@ -7,11 +7,11 @@ No hay pausa entre secuencias y el tiempo de encendido de cada secuencia es seud
 
 El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/20, es decir : 
 
-- Entrenamiento :de 14:49 a 16:19
+- Entrenamiento :de 17:22 a 21:08
 
-- Validacion : de 16:19 a 17:13
+- Validacion : de 21:08 a 22:35
 
-- Test: de 17:13 a 18:07
+- Test: de 22:35 a 23:43
 
 # Resultados Metricas  con algoritmo CO, metodo Median  y 10"
 
@@ -46,5 +46,12 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 |MNEAP|	0.678	|1.391|	0.342|	1.343|	0.761|	0.9030|
 |RMSE	|11.315|	9.334	|15.782|	8.833|	15.806|	12.2146|
 
+## INTERPRETACION DE LOS RESULTADOS
 
+El mejor resultado es el que tiene la puntuación F1 más alta, que son los datos secuenciales con secuencia fija. La puntuación F1 es una medida de exactitud que tiene en cuenta tanto la precisión como la recuperación. La precisión es la fracción de casos positivos predichos que son realmente positivos, y la recuperación es la fracción de casos positivos reales que son positivos predichos. Cuanto mayor sea la puntuación F1, más precisa será la predicción.
 
+Los otros dos resultados no son tan buenos porque tienen puntuaciones F1 más bajas. Los datos con muestras aleatorias tienen una puntuación F1 de 0,591, y los datos de secuencias con muestras aleatorias tienen una puntuación F1 de 0,638. Estos resultados no son tan buenos como los de los datos de secuencia con secuencia fija porque son menos precisos.
+
+La razón por la que los datos de secuencia con secuencia fija son más precisos es que es más fácil predecir el consumo de energía de los electrodomésticos cuando se conoce la secuencia de eventos que ocurrieron en la casa. Por ejemplo, si se sabe que alguien encendió el horno a las 18:00, se puede predecir que el horno consumirá más energía a esa hora. Esto no es posible con los otros dos conjuntos de datos porque no contienen información sobre la secuencia de acontecimientos.
+
+En conclusión, el mejor resultado es el que tiene la puntuación F1 más alta, que son los datos con secuencia fija. Este resultado es más preciso porque tiene en cuenta la secuencia de acontecimientos que ocurrieron en la casa.
