@@ -3,7 +3,7 @@
 Muestras secuenciales de 5 electrodomesticos más el agregado usando el OMPM  (equipo de medida propio  basados en un bus RS485 con modulos PZEM004) el dia 13 de Mayo de 2023
 entre  las 17:22 y las 23:43 completando  en total 6h 21 minutos de muestras.
 
-No hay pausa entre secuencias y el tiempo de encendido de cada secuencia es seudoaleatorio entre 1  y 2 minutos
+No hay pausa entre secuencias y el tiempo de encendido de cada secuencia es seudoaleatorio entre 1  y 2 minutos. Esto difiere de un experimento anterior en el que la secuencia tambien fue ascentdente pero el encendido y apagado de los electrodomesticos se hizo manualmente
 
 El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/20, es decir : 
 
@@ -15,7 +15,7 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 # Resultados Metricas  con algoritmo CO, metodo Median  y 10"
 
-## Datos anteriores con secuencia fija
+## Datos anteriores con secuencia fija y tiempo de encenido fijo de 2 minutos
 
 | Metrica          | Fryer   | LED Lamp | Incandescent lamp | Laptop Computer | Fan     | Media Aritmética |
 |-----------------|---------|----------|------------------|----------------|---------|------------------|
@@ -37,7 +37,7 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 
 
-## Datos  en secuencia
+## Datos  en secuencia fija con programador  y tiempo de encendido seudoaleatorio
 
 | Metrica          | Fryer   | LED Lamp | Incandescent lamp | Laptop Computer | Fan     | Media Aritmética |
 |-----------------|---------|----------|------------------|----------------|---------|------------------|
