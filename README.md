@@ -72,3 +72,20 @@ Si priorizamos la métrica MNEAP, que mide el error medio normalizado en la pote
 
 En general, la elección del mejor conjunto de resultados de la métrica NILMTK dependerá del caso de uso específico y de la prioridad de las distintas métricas.
 
+
+
+###  Resumen
+
+A continuación se muestra una tabla en la que se comparan los resultados de las métricas de NILMTK con los de los tres experimentos:
+
+|Experiment	|Fryer|	LED Lamp|	Incandescent Lamp	|Laptop Computer	|Fan|	Average
+|-----------------|---------|----------|------------------|----------------|---------|------------------|
+Datos anteriores con secuencia fija y tiempo de encendido fijo de 2 minutos	|0.420|	0.789|	0.756|	0.453|	0.741|	0.632|
+Datos con muestras aleatorias|	0.591	|0.158	|0.752	|0.349|	0.577	|0.485 |
+Datos en secuencia fija con programador y tiempo de encendido seudoaleatorio entre 10 y 60 segundos|	0.638	|0.364|	0.858|	0.381|	0.682	|0.5846|
+
+
+Como puede verse, los mejores resultados se obtuvieron con el tercer experimento, en el que los datos se recogieron en una secuencia fija con un tiempo de encendido pseudoaleatorio entre 10 y 60 segundos. Esto se debe probablemente a que este experimento proporcionó los datos más consistentes con los que pudo trabajar el algoritmo NILM. El segundo experimento, en el que los datos se recogieron con muestras aleatorias, produjo los peores resultados. Esto se debe probablemente a que las muestras aleatorias hicieron más difícil para el algoritmo NILM identificar los patrones en los datos. El primer experimento, en el que los datos se recogieron en una secuencia fija con un tiempo de encendido fijo de 2 minutos, produjo resultados intermedios entre el primer y el segundo experimento. Esto se debe probablemente a que el tiempo de encendido fijo proporcionó cierta coherencia a los datos, pero no tanta como el tiempo de encendido pseudoaleatorio del tercer experimento.
+
+En general, los resultados muestran que el algoritmo NILM es más preciso cuando los datos se recogen de forma coherente. Si busca los resultados más precisos, le recomiendo que utilice el tercer experimento, en el que los datos se recogen en una secuencia fija con un tiempo de encendido pseudoaleatorio entre 10 y 60 segundos.
+
