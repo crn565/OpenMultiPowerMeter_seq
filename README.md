@@ -48,7 +48,19 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 ## INTERPRETACION DE LOS RESULTADOS
 
+### Solo considerando la matrica F1
+
 El mejor resultado es el que tiene la puntuación F1 más alta, que son los datos secuenciales con secuencia fija y tiempo de encendido fijo. La puntuación F1 es una medida de exactitud que tiene en cuenta tanto la precisión como la recuperación. La precisión es la fracción de casos positivos predichos que son realmente positivos, y la recuperación es la fracción de casos positivos reales que son positivos predichos. Cuanto mayor sea la puntuación F1, más precisa será la predicción.
+
+
+Los otros dos resultados no son tan buenos porque tienen puntuaciones F1 más bajas. Los datos con muestras aleatorias tienen una puntuación F1 de 0,591, y los datos de secuencias con muestras aleatorias tienen una puntuación F1 de 0,638. Estos resultados no son tan buenos como los de los datos de secuencia con secuencia fija porque son menos precisos.
+
+La razón por la que los datos de secuencia con secuencia fija son más precisos es que es más fácil predecir el consumo de energía de los electrodomésticos cuando se conoce la secuencia de eventos que ocurrieron en la casa. Por ejemplo, si se sabe que alguien encendió el horno a las 18:00, se puede predecir que el horno consumirá más energía a esa hora. Esto no es posible con los otros dos conjuntos de datos porque no contienen información sobre la secuencia de acontecimientos.
+
+En conclusión, el mejor resultado es el que tiene la puntuación F1 más alta, que son los datos con secuencia fija. Este resultado es más preciso porque tiene en cuenta la secuencia de acontecimientos que ocurrieron en la casa.
+
+### Considerando todas la metricas
+
 
 Para determinar cuál de los tres conjuntos de resultados de las métricas NILMTK es el mejor, tenemos que considerar qué métricas son las más importantes para el caso de uso específico.
 
@@ -60,8 +72,3 @@ Si priorizamos la métrica MNEAP, que mide el error medio normalizado en la pote
 
 En general, la elección del mejor conjunto de resultados de la métrica NILMTK dependerá del caso de uso específico y de la prioridad de las distintas métricas.
 
-Los otros dos resultados no son tan buenos porque tienen puntuaciones F1 más bajas. Los datos con muestras aleatorias tienen una puntuación F1 de 0,591, y los datos de secuencias con muestras aleatorias tienen una puntuación F1 de 0,638. Estos resultados no son tan buenos como los de los datos de secuencia con secuencia fija porque son menos precisos.
-
-La razón por la que los datos de secuencia con secuencia fija son más precisos es que es más fácil predecir el consumo de energía de los electrodomésticos cuando se conoce la secuencia de eventos que ocurrieron en la casa. Por ejemplo, si se sabe que alguien encendió el horno a las 18:00, se puede predecir que el horno consumirá más energía a esa hora. Esto no es posible con los otros dos conjuntos de datos porque no contienen información sobre la secuencia de acontecimientos.
-
-En conclusión, el mejor resultado es el que tiene la puntuación F1 más alta, que son los datos con secuencia fija. Este resultado es más preciso porque tiene en cuenta la secuencia de acontecimientos que ocurrieron en la casa.
