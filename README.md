@@ -37,7 +37,7 @@ El periodo de entrenamiento,validacion  y test  se hace en la proporcion 60/20/2
 
 
 
-## Datos  en secuencia fija con programador  y tiempo de encendido seudoaleatorio
+## Datos  en secuencia fija con programador  y tiempo de encendido seudoaleatorio entre 10 y 60 segundos
 
 | Metrica          | Fryer   | LED Lamp | Incandescent lamp | Laptop Computer | Fan     | Media Aritmética |
 |-----------------|---------|----------|------------------|----------------|---------|------------------|
